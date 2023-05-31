@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты</title>
+</head>
+<body>
+    <h1>Результаты</h1>
+    {% if root1 %}
+        <p>Единственный корень: {{ root1 }}</p>
+    {% endif %}
+    {% if root2 %}
+        <p>Корень 2: {{ root2 }}</p>
+    {% endif %}
+    {% if not root1 and not root2 %}
+        <p>Корни отсутствуют</p>
+    {% endif %}
+</body>
+</html>
